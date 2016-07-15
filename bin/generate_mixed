@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'wordlistgenerator'
+
+generator = Wordlist::Generator.new
+
+generator.gen_mixed(3, 'a', 'z', 0, 99)
